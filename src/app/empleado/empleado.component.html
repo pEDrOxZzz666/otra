@@ -1,0 +1,24 @@
+<p>Nombre del empleado: {{nombre}}</p>
+<p>Apellido del empleado: {{apellido}}</p>
+<p>Edad del empleado: {{edad<18 ? "Es menor edad "+ edad:"Es mayor de edad "+ edad}}</p>
+<p>Empresa del empleado: {{empresa.value}}</p>
+
+Introduce la empresa: <input type="text" #empresa (keyup)="0" [disabled]="habilitacionCuadro">
+<br><br>
+<!--<input type="button" value="Cambiar" (click)="cambiaEmpresa(empresa.value)"> -->
+
+{{textoRegistro}}
+<br>
+
+Registrado <input type="radio" name="nRegistro" value="si" id="registro" [checked]="registrado" (click)="setusuarioRegistrado($event)"><br>
+No registrador <input type="radio" name="nRegistro" value="no" (click)="setusuarioRegistrado($event)"> <br><br>
+
+
+Esto es una prueba <input type="checkbox" value="Prueba" (click)="eventoPrueba($event)">
+
+
+{{prueba}}
+
+
+
+{{getRegistroUusuario()}}
