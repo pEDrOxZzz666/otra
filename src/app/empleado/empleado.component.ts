@@ -37,7 +37,7 @@ export class EmpleadoComponent implements OnInit {
 
   }
 
-  prueba = "";
+  prueba = " ";
 
   eventoPrueba(event:Event) {    
     if((<HTMLInputElement>event.target).checked) {
